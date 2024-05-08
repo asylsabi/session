@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль - Starbucks Coffee Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header>
+        <div class="logo">Starbucks</div>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Поиск...">
+            <button onclick="search()">Найти</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="community.html">Сообщество</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="review.html">Оставить отзыв</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Основное содержимое страницы -->
+    <section class="profile-section">
+        <div class="profile-info">
+            <div class="profile-image">
+                <img src="https://www.pngall.com/wp-content/uploads/5/User-Profile-PNG-High-Quality-Image.png" alt="Фото профиля">
+            </div>
+            <div class="user-details">
+                <h2>Иван Иванов</h2>
+                <p>Номер телефона: +7 (123) 456-7890</p>
+                <p>Бонусы: 250</p>
+            </div>
+        </div>
+        <div class="profile-actions">
+            <div class="basket-info">
+                <h3>Корзина</h3>
+                <p>Товаров в корзине: 3</p>
+                <p>Итого к оплате: $15.99</p>
+                <button onclick="proceedToCheckout()">Оплатить</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Скрипт JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

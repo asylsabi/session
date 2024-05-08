@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оставить отзыв</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="logo">Starbucks</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="menu.html">Меню</a></li>
+                <li><a href="store.html">Магазин</a></li>
+                <li><a href="profile.html">Профиль</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="review.html">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Основное содержимое страницы -->
+<section class="review-section">
+    <h1>Оставить отзыв</h1>
+    <div class="rating">
+        <p>Оцените нас звездами:</p>
+        <div class="stars" data-rating="0">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+    </div>
+    <textarea id="reviewText" placeholder="Напишите ваш отзыв здесь..." rows="4"></textarea>
+    <button onclick="submitReview()">Отправить отзыв</button>
+</section>
+
+<!-- Секция для отображения отзывов -->
+<section class="reviews-container">
+    <!-- Здесь будут отображаться отзывы -->
+</section>
+
+
+    <!-- Подвал -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Starbucks Coffee Hub</p>
+            <p>Контакт: contact@starbuckscoffeehub.com</p>
+        </div>
+    </footer>
+
+    <!-- Скрипт JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
